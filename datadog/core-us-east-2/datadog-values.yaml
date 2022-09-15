@@ -1,0 +1,12 @@
+registry: docker.registry.net/datadog
+datadog:
+  apiKeyExistingSecret: datadog-secret
+  appKeyExistingSecret: datadog-secret
+  processAgent:
+    processCollection: true
+  apm:
+    portEnabled: true
+  agents:
+    image:
+      tag: 7.33.0
+  tags: ["env:us-east-2", "function:k8s", "service:eks"]

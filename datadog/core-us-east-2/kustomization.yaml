@@ -1,0 +1,12 @@
+resources:
+- ../base
+
+namespace: kube-system
+
+helmCharts:
+  - name: datadog
+    repo: https://helm.datadoghq.com
+    version: v3.12.0
+    releaseName: datadog
+    namespace: kube-system 
+    valuesFile: ./datadog-values.yaml
