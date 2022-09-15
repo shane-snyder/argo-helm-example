@@ -1,7 +1,7 @@
 resources:
 - ../base
 
-namespace: kube-system
+namespace: datadog
 
 helmCharts:
   - name: datadog
